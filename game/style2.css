@@ -146,6 +146,7 @@
 
 .quediv {
   justify-content: left;
+  margin-top: 10px;
   max-height: 25px;
   display: grid;
   grid-template-areas: "h5 lable";
