@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contaainer {
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #e3f9ff;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.heading h1 {
+  font-weight: bolder;
+}
+.line {
+  width: 100%;
+  align-items: center;
+}
+.gradiantline {
+  margin-top: 10px;
+  width: 130px;
+  height: 5px;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 4%, #80d0c7 100%);
+}
+.loginDivs {
+  display: grid;
+  grid-template-areas: "p1 p2";
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: -50px;
+}
+
+.p {
+  width: 500px;
+  height: 200px;
+  background-color: #32c5c3;
+  margin: 30px;
+  border-radius: 20px;
+  align-items: baseline;
+}
+
+.contaainer-fluid {
+  position: absolute;
+  width: 100%;
+}
+
+.inpu {
+  margin-top: 50px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #e3f9ff;
+  height: 50px;
+  font-size: 2em;
+  padding: -20px;
+}
+
+.p h4 {
+  margin-top: 20px;
+  font-size: 2em;
+  color: #10409c;
+}
+
+.buttPlace {
+  margin-top: -20px;
+  width: 100%;
+}
+
+.button {
+  height: 50px;
+  width: 200px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  color: #10419c;
+  background-color: #32c5c3;
+}
+
+/* .activerer {
+
+} */
