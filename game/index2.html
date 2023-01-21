@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Quiz</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body onload="positionElements()">
+    <script src="javascript2.js"></script>
+    <div class="contaainer">
+      <div class="container-fluid">
+        <div class="p1">
+          <h4 id="player1"></h4>
+          Score : <span id="p1score"></span>
+        </div>
+        <div class="line"></div>
+        <br />
+        <div class="p2">
+          <h4 id="player2"></h4>
+          Score : <span id="p2score"></span>
+        </div>
+      </div>
+      <input
+        type="button"
+        value="Surrender"
+        onclick="EndtheGame()"
+        class="ender"
+        id="enr"
+      />
+      <br />
+    </div>
+    <div class="contaainer2">
+      <div class="question" id="question">
+        <hl>Question Turn : </hl>
+        <span id="QpayerName" class="queusername"></span>
+        <center>
+          <!-- <input type="number" name="" id="question" class="inpu"> -->
+          <br />
+
+          <div class="calculator">
+            <form>
+              <div class="display">
+                <input
+                  type="text"
+                  name="display"
+                  maxlength="10"
+                  onchange="checkValue()"
+                  id="nameinpu"
+                  readonly
+                />
+              </div>
+              <div>
+                <input
+                  title="Clear all"
+                  type="button"
+                  value="AC"
+                  onclick="display.value = ''"
+                  class="operator"
+                />
+                <input
+                  title="Delete"
+                  class="operator"
+                  type="button"
+                  value="DE"
+                  onclick="display.value = display.value.toString().slice(0, -1)"
+                />
+                <input
+                  type="button"
+                  value="."
+                  onclick="display.value += '.'"
+                  class="operator"
+                />
+                <input
+                  type="button"
+                  value="/"
+                  onclick="display.value += '/'"
+                  class="operator"
+                />
+                <input
+                  type="button"
+                  value="+"
+                  onclick="display.value += '+'"
+                  class="operator"
+                />
+              </div>
+              <!-- 2 -->
+              <div>
+                <input type="button" value="1" onclick="display.value += 1" />
+                <input type="button" value="2" onclick="display.value += 2" />
+                <input type="button" value="3" onclick="display.value += 3" />
+                <input type="button" value="4" onclick="display.value += 4" />
+                <input
+                  type="button"
+                  value="x"
+                  onclick="display.value += '*'"
+                  class="operator"
+                />
+              </div>
+              <!-- 3 -->
+              <div>
+                <input type="button" value="5" onclick="display.value += 5" />
+                <input type="button" value="6" onclick="display.value += 6" />
+                <input type="button" value="7" onclick="display.value += 7" />
+                <input type="button" value="8" onclick="display.value += 8" />
+                <input
+                  type="button"
+                  value="-"
+                  onclick="display.value += '-'"
+                  class="operator"
+                />
+              </div>
+              <!-- 4 -->
+              <div>
+                <input type="button" value="9" onclick="display.value += 9" />
+
+                <input type="button" value="0" onclick="display.value += 0" />
+                <input
+                  type="button"
+                  value="00"
+                  onclick="display.value += '0' + 0"
+                />
+                <input
+                  type="button"
+                  value="Submit"
+                  id="ubmi"
+                  class="iseual operator"
+                  onclick="displayyy()"
+                  title="Enter"
+                />
+              </div>
+            </form>
+          </div>
+        </center>
+      </div>
+      <div class="answer" id="answer">
+        <hl>Answer Turn : </hl>
+        <span id="ApayerName" class="queusername"></span>
+        <div class="quediv">
+          <h5>Question-</h5>
+          <label id="queDisplay"></label>
+        </div>
+
+        <div class="oteregem">
+          <h for="" class="asq">Your answer - </h>
+          <input type="number" id="ansinpug" />
+        </div>
+        <br />
+        <button
+          type="button"
+          id="AnsSummit"
+          class="anssum"
+          onclick="submitAnsByUser()"
+        >
+          Submit
+        </button>
+        <br />
+      </div>
+    </div>
+  </body>
+</html>

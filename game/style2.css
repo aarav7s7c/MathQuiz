@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+.contaainer {
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  height: 148.1px;
+  background-color: #e3f9ff;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  color: #10419c;
+}
+
+.contaainer2 {
+  margin-bottom: -100px;
+  margin-top: -50px;
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #e3f9ff;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  color: #10419c;
+  grid-template-areas: "question answer";
+}
+
+.container-fluid {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.container-fluid #player2 {
+  margin-top: -20px;
+}
+
+.line {
+  margin-top: 10px;
+  width: 130px;
+  height: 2.5px;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 4%, #80d0c7 100%);
+}
+
+.question {
+  padding: 10px 40px;
+  /* width: 500px;
+  height: 500px; */
+  background-color: #8adddc;
+  margin: 30px;
+  border-radius: 20px;
+  align-items: baseline;
+}
+
+.answer {
+  opacity: 0.5;
+  padding: 40px;
+  padding-right: 90px;
+  /* width: 500px;
+  height: 300px; */
+  background-color: #8adddc;
+  margin: 30px;
+  border-radius: 20px;
+  align-items: baseline;
+
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.contaainer2 h4 {
+  margin: 15px;
+}
+
+.inpu {
+  margin-top: 50px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: beige;
+  height: 50px;
+  font-size: 2em;
+  padding: -20px;
+}
+.buttPlace {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.submitButton {
+  height: 50px;
+  width: 200px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  color: #10419c;
+  background-color: #e3f9ff;
+}
+
+.calculator {
+  margin-top: -60px;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 15px;
+}
+
+.calculator input {
+  width: 60px;
+  height: 60px;
+  margin: 7px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2em;
+  background-color: #37404e;
+  color: #fff;
+  cursor: pointer;
+}
+
+.calculator .iseual {
+  width: 140px;
+  border-radius: 72.5px;
+  font-size: 1.2em;
+  color: #8adddc;
+}
+
+.calculator .display {
+  display: flex;
+  justify-content: flex-end;
+  height: 74px;
+  width: 100%;
+}
+
+.display input {
+  text-align: center;
+  flex: 1;
+  font-size: 2.3em;
+  letter-spacing: 0.1em;
+  background-color: transparent;
+  cursor: text;
+  color: #37404e;
+}
+
+.quediv {
+  justify-content: left;
+  max-height: 25px;
+  display: grid;
+  grid-template-areas: "h5 lable";
+}
+
+.answer h5 {
+  margin-left: 20px;
+  width: 20%;
+}
+
+.submit {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.active {
+  opacity: 1;
+  pointer-events: all;
+  cursor: auto;
+}
+
+.disable {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.quediv #queDisplay {
+  font-size: 1.2em;
+  color: #3a4452;
+  margin-left: 20px;
+  margin-top: -5px;
+}
+
+hl {
+  width: 400px;
+  color: #032a74;
+  font-size: 1.5em;
+  margin-left: 20px;
+  font-size: 1.8em;
+  
+  margin: 20px;
+  margin-top: 20px;
+}
+h {
+  width: 400px;
+  color: #032a74;
+  font-size: 1.5em;
+  margin-left: 20px;
+}
+
+#ansinpug {
+  height: 36px;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #e3f9ff;
+}
+
+.anssum {
+/*   pointer-events: none;
+  opacity: 0.5; */
+  width: 150px;
+  height: 47px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2em;
+  background-color: #37404e;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+.anssum:hover {
+  background-color: #3d434e;
+}
+
+.forbtn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.asndone {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.oteregem {
+  margin-top: 40px;
+}
+
+.queusername {
+  font-size: 1.5em;
+  color: #3d434e;
+}
+
+.ender {
+  pointer-events: none;
+  opacity: 0.5;
+  width: 100px;
+  margin-right: 20px;
+  margin-top: 10px;
+  background-color: #37404e;
+  border: none;
+  outline: none;
+  height: 35px;
+  color: #e3f9ff;
+  border-radius: 6px;
+}
+.endlvlup {
+  opacity: 1;
+  pointer-events: all;
+}
